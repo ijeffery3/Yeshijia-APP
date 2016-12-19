@@ -244,11 +244,11 @@
     infoLabel.font = [UIFont systemFontOfSize:17.0];
     [bImageView addSubview:infoLabel];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClicked)];
-    [headerView addGestureRecognizer:tap];
+    [aImageView addGestureRecognizer:tap];
+    aImageView.userInteractionEnabled = YES;
     [headerView addSubview:aImageView];
     
     
-    headerView.userInteractionEnabled = YES;
     //创建一个layout布局类
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc]init];
     layout.itemSize = CGSizeMake(120, 200);
